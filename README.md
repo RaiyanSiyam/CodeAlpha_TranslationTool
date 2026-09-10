@@ -89,10 +89,3 @@ backend/src/translateService.js   provider implementations
 backend/.env.example              env template (gitignored: .env)
 frontend/src/App.jsx               UI
 ```
-
-## LinkedIn clip (45s)
-
-1. **0–7s** — Screen: calque UI. One line: “CodeAlpha Task 1 — translator, key on the server.”
-2. **7–22s** — Click **Speak**, dictate a line (or type), pick a target language, hit **Render**.
-3. **22–34s** — Copy (checkmark). **Read** the output. Swap source/target.
-4. **32–45s** — Cut to `translateService.js` + `POST /api/translate`. End on the GitHub name `CodeAlpha_TranslationTool`.
