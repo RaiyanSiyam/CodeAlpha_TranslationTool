@@ -1,0 +1,81 @@
+export const LANGUAGES = [
+  { code: "auto", name: "Auto-detect", native: "Detect", sample: "✦" },
+  { code: "en", name: "English", native: "English", sample: "Aa" },
+  { code: "es", name: "Spanish", native: "Español", sample: "Ñ" },
+  { code: "fr", name: "French", native: "Français", sample: "é" },
+  { code: "de", name: "German", native: "Deutsch", sample: "ß" },
+  { code: "it", name: "Italian", native: "Italiano", sample: "à" },
+  { code: "pt", name: "Portuguese", native: "Português", sample: "ã" },
+  { code: "nl", name: "Dutch", native: "Nederlands", sample: "ij" },
+  { code: "pl", name: "Polish", native: "Polski", sample: "ł" },
+  { code: "ru", name: "Russian", native: "Русский", sample: "Я" },
+  { code: "uk", name: "Ukrainian", native: "Українська", sample: "ї" },
+  { code: "tr", name: "Turkish", native: "Türkçe", sample: "ş" },
+  { code: "ar", name: "Arabic", native: "العربية", sample: "ع" },
+  { code: "he", name: "Hebrew", native: "עברית", sample: "א" },
+  { code: "fa", name: "Persian", native: "فارسی", sample: "پ" },
+  { code: "hi", name: "Hindi", native: "हिन्दी", sample: "अ" },
+  { code: "bn", name: "Bengali", native: "বাংলা", sample: "অ" },
+  { code: "zh", name: "Chinese", native: "中文", sample: "文" },
+  { code: "ja", name: "Japanese", native: "日本語", sample: "あ" },
+  { code: "ko", name: "Korean", native: "한국어", sample: "한" },
+  { code: "vi", name: "Vietnamese", native: "Tiếng Việt", sample: "ệ" },
+  { code: "id", name: "Indonesian", native: "Bahasa Indonesia", sample: "ng" },
+  { code: "th", name: "Thai", native: "ไทย", sample: "ก" },
+  { code: "sv", name: "Swedish", native: "Svenska", sample: "å" },
+  { code: "da", name: "Danish", native: "Dansk", sample: "ø" },
+  { code: "fi", name: "Finnish", native: "Suomi", sample: "ä" },
+  { code: "el", name: "Greek", native: "Ελληνικά", sample: "Ω" },
+  { code: "cs", name: "Czech", native: "Čeština", sample: "č" },
+  { code: "hu", name: "Hungarian", native: "Magyar", sample: "ő" },
+  { code: "ro", name: "Romanian", native: "Română", sample: "ă" },
+  { code: "ga", name: "Irish", native: "Gaeilge", sample: "á" },
+  { code: "eo", name: "Esperanto", native: "Esperanto", sample: "ĉ" },
+];
+
+export const EXAMPLES = [
+  "Where is the nearest train station?",
+  "Could you recommend a quiet café nearby?",
+  "I would like to book a table for two tonight.",
+];
+
+export function languageByCode(code) {
+  return LANGUAGES.find((item) => item.code === code);
+}
+
+export function speechLocale(code) {
+  const map = {
+    en: "en-US",
+    es: "es-ES",
+    fr: "fr-FR",
+    de: "de-DE",
+    it: "it-IT",
+    pt: "pt-BR",
+    nl: "nl-NL",
+    pl: "pl-PL",
+    ru: "ru-RU",
+    uk: "uk-UA",
+    tr: "tr-TR",
+    ar: "ar-SA",
+    he: "he-IL",
+    fa: "fa-IR",
+    hi: "hi-IN",
+    bn: "bn-IN",
+    zh: "zh-CN",
+    ja: "ja-JP",
+    ko: "ko-KR",
+    vi: "vi-VN",
+    id: "id-ID",
+    th: "th-TH",
+    sv: "sv-SE",
+    da: "da-DK",
+    fi: "fi-FI",
+    el: "el-GR",
+    cs: "cs-CZ",
+    hu: "hu-HU",
+    ro: "ro-RO",
+    ga: "ga-IE",
+    eo: "eo",
+  };
+  return map[code] || code;
+}
