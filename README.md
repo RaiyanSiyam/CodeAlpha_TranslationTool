@@ -1,8 +1,8 @@
-# calque
+# Vetro
 
 CodeAlpha Task 1. A translator with a React UI and an Express proxy so the provider key never reaches the browser.
 
-**calque** is a linguistics term: a word-for-word loan translation. The app does the same job — take text in one language, return it in another.
+**Verto** is a linguistics term: a word-for-word loan translation. The app does the same job — take text in one language, return it in another.
 
 ## Run
 
